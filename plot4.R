@@ -4,7 +4,7 @@ plot4 <- function(){
       power_data <- loadpower()
    }
    png(filename = "./plot4.png", width=480, height=480, units="px")
-   par(mfrow=c(2,2), cex=0.8, font=2)
+   par(mfrow=c(2,2), cex=0.8)
    plot(power_data$Time, power_data$Global_active_power, type="l", ylab="Global Active Power", xlab="")
    plot(power_data$Time, power_data$Voltage, type="l", xlab="datetime", ylab="Voltage")
    plot(power_data$Time, power_data$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
